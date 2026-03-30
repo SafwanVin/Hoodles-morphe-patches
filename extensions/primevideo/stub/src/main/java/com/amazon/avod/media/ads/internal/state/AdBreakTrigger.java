@@ -1,7 +1,7 @@
 package com.amazon.avod.media.ads.internal.state;
 
-import com.amazon.avod.media.ads.AdBreak;
 import com.amazon.avod.media.TimeSpan;
+import com.amazon.avod.media.ads.AdBreak;
 
 public class AdBreakTrigger {
     public AdBreak getBreak() {
