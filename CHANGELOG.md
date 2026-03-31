@@ -1,3 +1,10 @@
+# [1.17.0-dev.1](https://github.com/hoo-dles/morphe-patches/compare/v1.16.0...v1.17.0-dev.1) (2026-03-31)
+
+
+### Features
+
+* **Prime Video:** Add `Playback speed controls` patch ([a3544dc](https://github.com/hoo-dles/morphe-patches/commit/a3544dc9cecd1a5fbc4fa7f1e0750f048d906350))
+
 # [1.16.0](https://github.com/hoo-dles/morphe-patches/compare/v1.15.0...v1.16.0) (2026-03-28)
 
 
