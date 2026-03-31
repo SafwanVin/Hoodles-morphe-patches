@@ -44,7 +44,6 @@ val enablePremiumPatch = bytecodePatch(
         MapToPlanFingerprint.method.addInstructions(0, """
             sget-object v0, Lcom/soundcloud/android/upsell/UpsellType${'$'}None;->INSTANCE:Lcom/soundcloud/android/upsell/UpsellType${'$'}None;
             return-object v0
-
         """.trimIndent())
     }
 

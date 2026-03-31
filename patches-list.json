@@ -1,5 +1,5 @@
 {
-  "version": "1.16.0",
+  "version": "1.17.0-dev.1",
   "patches": [
     {
       "name": "Add resources",
@@ -525,6 +525,18 @@
       "options": []
     },
     {
+      "name": "Enable speed control",
+      "description": "Enables experimental speed control to the video player.",
+      "use": true,
+      "dependencies": [],
+      "compatiblePackages": {
+        "com.amazon.avod.thirdpartyclient": [
+          "3.0.447.757"
+        ]
+      },
+      "options": []
+    },
+    {
       "name": "Force Native Keyboard",
       "description": "When typing in normal lessons, Eggbun forces you to use their own on-screen keyboard. This patches forces the use of the default OS keyboard.",
       "use": true,
@@ -618,7 +630,7 @@
       "dependencies": [],
       "compatiblePackages": {
         "com.amazon.avod.thirdpartyclient": [
-          "3.0.443"
+          "3.0.447.757"
         ]
       },
       "options": []
@@ -632,7 +644,7 @@
       ],
       "compatiblePackages": {
         "com.amazon.avod.thirdpartyclient": [
-          "3.0.443"
+          "3.0.447.757"
         ]
       },
       "options": []
