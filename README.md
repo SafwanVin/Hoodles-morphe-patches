@@ -28,7 +28,6 @@
 
 | App                             | Package                            | Patches                                                                                               |
 |---------------------------------|------------------------------------|-------------------------------------------------------------------------------------------------------|
-| All-In-One Calculator           | `all.in.one.calculator`            | <ul><li>Disable ads</li><ul>                                                                          |
 | AllTrails                       | `com.alltrails.alltrails`          | <ul><li>Enable Peak membership</li></ul>                                                              |
 | Amazon Prime Video              | `com.amazon.avod.thirdpartyclient` | <ul><li>Enable speed control</li><li>Skip ads</li></ul>                                               |
 | Avocards                        | `com.avocards`                     | <ul><li>Enable Premium</li></ul>                                                                      |
@@ -49,9 +48,11 @@
 | MyExpenses                      | `org.totschnig.myexpenses`         | <ul><li>Enable Pro</li></ul>                                                                          |
 | MyFitnessPal                    | `com.myfitnesspal.android`         | <ul><li>Enable Premium+</li></ul>                                                                     |
 | NOMone Desktop                  | `nom.vrd`                          | <ul><li>Disable anti-tamper</li><li>Disable telemetry</li><li>Remove trial limit</li></ul>            |
+| Nova Launcher                   | `com.teslacoilsw.launcher`         | <ul><li>Enable Prime</li></ul>                                                                        |
 | Pandora                         | `com.pandora.android`              | <ul><li>Disable ads</li><li>Unlimited skips</li></ul>                                                 |
 | Podcast Addict                  | `com.bambuna.podcastaddict`        | <ul><li>Enable Premium</li></ul>                                                                      |
 | Proton VPN                      | `ch.protonvpn.android`             | <ul><li>Remove server change delay</li><li>Unlock custom DNS</li><li>Unlock split tunneling</li></ul> |
+| PyDroid3                        | `ru.iiec.pydroid3`                 | <ul><li>Enable Premium</li></ul>                                                                      |
 | Smart Launcher                  | `ginlemon.flowerfree`              | <ul><li>Enable Pro</li></ul>                                                                          |
 | SnoreLab                        | `com.snorelab.app`                 | <ul><li>Enable Premium</li></ul>                                                                      |
 | Sofascore                       | `com.sofascore.results`            | <ul><li>Disable ads</li></ul>                                                                         |

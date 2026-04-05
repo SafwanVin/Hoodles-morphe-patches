@@ -1,7 +1,7 @@
 {
-  "created_at": "2026-04-03T19:41:43",
-  "description": "# [1.19.0](https://github.com/hoo-dles/morphe-patches/compare/v1.18.0...v1.19.0) (2026-04-03)\n\n\n### Features\n\n* **Lyfta:** Add `Enable Premium` patch ([90b238a](https://github.com/hoo-dles/morphe-patches/commit/90b238aa3866acfdc3c05cb54cc4b58a9beef314))",
-  "download_url": "https://github.com/hoo-dles/morphe-patches/releases/download/v1.19.0/patches-1.19.0.mpp",
-  "signature_download_url": "https://github.com/hoo-dles/morphe-patches/releases/download/v1.19.0/patches-1.19.0.mpp.asc",
-  "version": "1.19.0"
+  "created_at": "2026-04-04T23:14:30",
+  "description": "# [1.20.0-dev.2](https://github.com/hoo-dles/morphe-patches/compare/v1.20.0-dev.1...v1.20.0-dev.2) (2026-04-04)\n\n\n### Features\n\n* **Nova Launcher:** Add `Enable Prime` patch ([2fe5084](https://github.com/hoo-dles/morphe-patches/commit/2fe50841d9ceb7078ea8b5d1b237eeaf9d8e9087))",
+  "download_url": "https://github.com/hoo-dles/morphe-patches/releases/download/v1.20.0-dev.2/patches-1.20.0-dev.2.mpp",
+  "signature_download_url": "https://github.com/hoo-dles/morphe-patches/releases/download/v1.20.0-dev.2/patches-1.20.0-dev.2.mpp.asc",
+  "version": "1.20.0-dev.2"
 }
