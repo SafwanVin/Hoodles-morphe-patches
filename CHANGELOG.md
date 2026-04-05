@@ -1,3 +1,11 @@
+# [1.20.0](https://github.com/hoo-dles/morphe-patches/compare/v1.19.0...v1.20.0) (2026-04-05)
+
+
+### Features
+
+* **Nova Launcher:** Add `Enable Prime` patch ([2fe5084](https://github.com/hoo-dles/morphe-patches/commit/2fe50841d9ceb7078ea8b5d1b237eeaf9d8e9087))
+* **PyDroid3:** Add `Enable Premium` patch ([1ed55c8](https://github.com/hoo-dles/morphe-patches/commit/1ed55c8946b289a38068a9c7c324fd1aa80bfe23))
+
 # [1.20.0-dev.2](https://github.com/hoo-dles/morphe-patches/compare/v1.20.0-dev.1...v1.20.0-dev.2) (2026-04-04)
 
 
