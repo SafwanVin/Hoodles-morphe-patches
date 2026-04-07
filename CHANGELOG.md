@@ -1,3 +1,11 @@
+# [1.21.0](https://github.com/hoo-dles/morphe-patches/compare/v1.20.0...v1.21.0) (2026-04-07)
+
+
+### Features
+
+* **IbisPaint X:** Update patch to support 14.0.0 ([4136c88](https://github.com/hoo-dles/morphe-patches/commit/4136c88eff5e96c5ce522cd201595b1f8b6d26fa))
+* **Podcast Addict:** Add `MicroG integration` patch ([95f3b09](https://github.com/hoo-dles/morphe-patches/commit/95f3b0921f15dc0d7eff672c7d43636d78a79119))
+
 # [1.21.0-dev.2](https://github.com/hoo-dles/morphe-patches/compare/v1.21.0-dev.1...v1.21.0-dev.2) (2026-04-06)
 
 
