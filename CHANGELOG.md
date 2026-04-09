@@ -1,3 +1,10 @@
+# [1.23.0-dev.1](https://github.com/hoo-dles/morphe-patches/compare/v1.22.1-dev.1...v1.23.0-dev.1) (2026-04-09)
+
+
+### Features
+
+* **Ventusky:** Add `Enable Premium` patch ([1c3cc17](https://github.com/hoo-dles/morphe-patches/commit/1c3cc178122abfced2b92379059843c75d8c7ee8))
+
 ## [1.22.1-dev.1](https://github.com/hoo-dles/morphe-patches/compare/v1.22.0...v1.22.1-dev.1) (2026-04-08)
 
 
