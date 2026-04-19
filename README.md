@@ -66,7 +66,7 @@
 ## Frequently Asked Questions :man_shrugging:
 
 #### How do I use this thing?
-Add this repo (https://github.com/hoo-dles/morphe-patches) as a remote patch source to Morphe Manager.
+Simply clicking [this deeplink](https://morphe.software/add-source?github=hoo-dles/morphe-patches) from a device with Morphe installed will automatically add the patches to Manager. Or, you can manually add `https://github.com/hoo-dles/morphe-patches` as a remote source in Morphe Manager.
 
 #### Help, why can't I log in with my Google account? Why doesn't Google Drive work?
 MicroG integration is needed for features that require Google Play Services. Apps that are currently supported are marked with a :earth_americas:.
