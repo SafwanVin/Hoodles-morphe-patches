@@ -14,8 +14,8 @@ import com.android.tools.smali.dexlib2.builder.instruction.BuilderInstruction21c
 import com.android.tools.smali.dexlib2.iface.instruction.formats.Instruction21c
 import com.android.tools.smali.dexlib2.iface.reference.StringReference
 import com.android.tools.smali.dexlib2.immutable.reference.ImmutableStringReference
-import hoodles.morphe.patches.all.packagename.changePackageNamePatch
-import hoodles.morphe.patches.all.packagename.setOrGetFallbackPackageName
+import hoodles.morphe.patches.all.manifest.packagename.changePackageNamePatch
+import hoodles.morphe.patches.all.manifest.packagename.setOrGetFallbackPackageName
 import hoodles.morphe.patches.shared.misc.extension.activityOnCreateExtensionHook
 import hoodles.morphe.patches.shared.misc.resources.addAppResources
 import hoodles.morphe.patches.shared.misc.resources.addResourcesPatch

@@ -1,8 +1,8 @@
 package hoodles.morphe.patches.shared.misc.gms
 
 import app.morphe.patcher.patch.resourcePatch
-import hoodles.morphe.patches.all.packagename.changePackageNamePatch
-import hoodles.morphe.patches.all.packagename.setOrGetFallbackPackageName
+import hoodles.morphe.patches.all.manifest.packagename.changePackageNamePatch
+import hoodles.morphe.patches.all.manifest.packagename.setOrGetFallbackPackageName
 import org.w3c.dom.Element
 import org.w3c.dom.Node
 

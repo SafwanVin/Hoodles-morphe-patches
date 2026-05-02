@@ -2,7 +2,7 @@
  * Original code is credited to ReVanced:
  * https://gitlab.com/ReVanced/revanced-patches/-/blob/main/patches/src/main/kotlin/app/revanced/patches/all/misc/appicon/HideAppIconPatch.kt
  */
-package hoodles.morphe.patches.all.appicon
+package hoodles.morphe.patches.all.manifest.appicon
 
 import app.morphe.patcher.patch.resourcePatch
 import app.morphe.util.asSequence
