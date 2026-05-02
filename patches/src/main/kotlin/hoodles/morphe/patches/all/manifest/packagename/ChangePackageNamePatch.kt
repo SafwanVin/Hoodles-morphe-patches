@@ -1,4 +1,4 @@
-package hoodles.morphe.patches.all.packagename
+package hoodles.morphe.patches.all.manifest.packagename
 
 import app.morphe.patcher.patch.Option
 import app.morphe.patcher.patch.OptionException
