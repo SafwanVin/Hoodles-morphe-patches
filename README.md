@@ -22,7 +22,7 @@
 | Cake :dart:                          | `me.mycake`                                | <ul><li>Enable Plus</li></ul>                                                                                                        |
 | CamScanner                           | `com.intsig.camscanner`                    | <ul><li>Disable telemetry</li><li>Enable Premium</li></ul>                                                                           |
 | DAILY POCKET :earth_americas:        | `kr.co.yjteam.dailypay`                    | <ul><li>Enable Premium</li></ul>                                                                                                     |
-| Duolingo                             | `com.duolingo`                             | <ul><li>Disable Play Integrity check</li><li>Enable debug mode</li><li>Enable Super/MAX</li></ul>                                    |
+| Duolingo                             | `com.duolingo`                             | <ul><li>Disable dynamic app icon</li><li>Disable Play Integrity check</li><li>Enable debug mode</li><li>Enable Super/MAX</li></ul>   |
 | Eggbun                               | `kr.eggbun.eggconvo`                       | <ul><li>Enable Premium</li><li>Force native keyboard</li></ul>                                                                       |
 | FotMob                               | `com.mobilefootie.wc2010`                  | <ul><li>Enable FotMob+</li></ul>                                                                                                     |
 | HelloChinese :dart: :computer:       | `com.hellochinese`                         | <ul><li>Enable Premium</li></ul>                                                                                                     |
@@ -34,8 +34,10 @@
 | Meme Generator                       | `com.zombodroid.MemeGenerator`             | <ul><li>Enable Pro</li></ul>                                                                                                         |
 | Merriam-Webster                      | `com.merriamwebster`                       | <ul><li>Enable Premium</li></ul>                                                                                                     |
 | Mimo                                 | `com.getmimo`                              | <ul><li>Enable Pro</li></ul>                                                                                                         |
+| Mirinae                              | `com.mirinae.mirinae`                      | <ul><li>Enable Pro</li></ul>                                                                                                         |
 | MyExpenses                           | `org.totschnig.myexpenses`                 | <ul><li>Enable Pro</li></ul>                                                                                                         |
 | MyFitnessPal                         | `com.myfitnesspal.android`                 | <ul><li>Enable Premium+</li></ul>                                                                                                    |
+| Niagara Launcher                     | `bitpit.launcher`                          | <ul><li>Enable Pro</li></ul>                                                                                                         |
 | NOMone Desktop                       | `nom.vrd`                                  | <ul><li>Disable anti-tamper</li><li>Disable telemetry</li><li>Remove trial limit</li></ul>                                           |
 | Nova Launcher                        | `com.teslacoilsw.launcher`                 | <ul><li>Enable Prime</li></ul>                                                                                                       |
 | Pandora                              | `com.pandora.android`                      | <ul><li>Disable ads</li><li>Unlimited skips</li></ul>                                                                                |
@@ -57,7 +59,7 @@
 | Xodo                                 | `com.xodo.pdf.reader`                      | <ul><li>Enable Pro</li></ul>                                                                                                         |
 | XRecorder                            | `videoeditor.videorecorder.screenrecorder` | <ul><li>Enable Pro</li></ul>                                                                                                         |
 |                                      |                                            |                                                                                                                                      |
-| _Universal Patches_                  |                                            | <ul><li>Change package name</li><li>Disable Pairip license check</li><li>Hide app icon</li></ul>                                     |
+| _Universal Patches_                  |                                            | <ul><li>Change package name</li><li>Disable Pairip license check</li><li>Enable debug</li><li>Hide app icon</li></ul>                |
 
 :earth_americas: _Supports MicroG integration._\
 :dart: _This app has a strict requirement to use the version defined in the patch._\

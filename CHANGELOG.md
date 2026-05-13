@@ -1,3 +1,31 @@
+# [1.31.0-dev.4](https://github.com/hoo-dles/morphe-patches/compare/v1.31.0-dev.3...v1.31.0-dev.4) (2026-05-13)
+
+
+### Features
+
+* **Niagara Launcher:** Add `Enable Niagara Pro` patch ([8cb3737](https://github.com/hoo-dles/morphe-patches/commit/8cb37378f971e0a66814c558af680943573e5ad3))
+
+# [1.31.0-dev.3](https://github.com/hoo-dles/morphe-patches/compare/v1.31.0-dev.2...v1.31.0-dev.3) (2026-05-12)
+
+
+### Features
+
+* **Mirinae:** Add `Enable Pro` patch ([230f59a](https://github.com/hoo-dles/morphe-patches/commit/230f59a7f9bbd0ef3fed67ae011e9eedbc69287f))
+
+# [1.31.0-dev.2](https://github.com/hoo-dles/morphe-patches/compare/v1.31.0-dev.1...v1.31.0-dev.2) (2026-05-12)
+
+
+### Bug Fixes
+
+* **Meme Generator:** Fix license error on app launch ([8a5f8cd](https://github.com/hoo-dles/morphe-patches/commit/8a5f8cdd6f73423aff458f22e77312f6fb358abd))
+
+# [1.31.0-dev.1](https://github.com/hoo-dles/morphe-patches/compare/v1.30.0...v1.31.0-dev.1) (2026-05-10)
+
+
+### Features
+
+* **Duolingo:** Add `Disable dynamic app icon` patch ([5173205](https://github.com/hoo-dles/morphe-patches/commit/5173205bd44fa5d0415e8a1e0a74d6a1b89072da))
+
 # [1.30.0](https://github.com/hoo-dles/morphe-patches/compare/v1.29.0...v1.30.0) (2026-05-07)
 
 
