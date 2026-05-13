@@ -1,5 +1,5 @@
 {
-  "version": "1.31.0-dev.3",
+  "version": "1.31.0-dev.4",
   "patches": [
     {
       "name": "AMOLED dark theme",
@@ -408,6 +408,31 @@
           "targets": [
             {
               "version": "226.16092.20260302",
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Enable Niagara Pro",
+      "description": "Enables app features locked behind the subscription paywall.",
+      "default": true,
+      "dependencies": [],
+      "compatiblePackages": [
+        {
+          "packageName": "bitpit.launcher",
+          "name": "Niagara Launcher",
+          "description": null,
+          "apkFileType": null,
+          "appIconColor": "#9FCDFB",
+          "signatures": null,
+          "targets": [
+            {
+              "version": "1.16.4",
               "isExperimental": false,
               "minSdk": null,
               "description": null

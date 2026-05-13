@@ -1,3 +1,10 @@
+# [1.31.0-dev.4](https://github.com/hoo-dles/morphe-patches/compare/v1.31.0-dev.3...v1.31.0-dev.4) (2026-05-13)
+
+
+### Features
+
+* **Niagara Launcher:** Add `Enable Niagara Pro` patch ([8cb3737](https://github.com/hoo-dles/morphe-patches/commit/8cb37378f971e0a66814c558af680943573e5ad3))
+
 # [1.31.0-dev.3](https://github.com/hoo-dles/morphe-patches/compare/v1.31.0-dev.2...v1.31.0-dev.3) (2026-05-12)
 
 
