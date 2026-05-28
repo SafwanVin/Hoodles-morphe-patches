@@ -1,5 +1,5 @@
 {
-  "version": "1.34.0-dev.1",
+  "version": "1.34.0-dev.2",
   "patches": [
     {
       "name": "AMOLED dark theme",
@@ -830,7 +830,7 @@
       "compatiblePackages": [
         {
           "packageName": "com.sbs.diet",
-          "name": "Macro Factor",
+          "name": "MacroFactor",
           "description": null,
           "apkFileType": null,
           "appIconColor": "#000000",
@@ -846,14 +846,14 @@
         },
         {
           "packageName": "com.sbs.train",
-          "name": "Macro Factor Workouts",
+          "name": "MacroFactor Workouts",
           "description": null,
           "apkFileType": null,
           "appIconColor": "#000000",
           "signatures": null,
           "targets": [
             {
-              "version": "1.1.7",
+              "version": "1.2.1",
               "isExperimental": false,
               "minSdk": null,
               "description": null
