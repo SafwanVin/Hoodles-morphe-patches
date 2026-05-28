@@ -9,16 +9,16 @@ object Constants {
 
     val COMPATIBILITY = arrayOf(
         Compatibility(
-            name = "Macro Factor",
+            name = "MacroFactor",
             packageName = PACKAGE_NAME,
             appIconColor = 0x000000,
             targets = listOf(AppTarget("5.7.8"))
         ),
         Compatibility(
-            name = "Macro Factor Workouts",
+            name = "MacroFactor Workouts",
             packageName = WORKOUTS_PACKAGE_NAME,
             appIconColor = 0x000000,
-            targets = listOf(AppTarget("1.1.7"))
+            targets = listOf(AppTarget("1.2.1"))
         )
     )
 }
