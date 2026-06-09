@@ -8,6 +8,7 @@ import hoodles.morphe.util.addInstructionsToEnd
 import hoodles.morphe.util.constructor
 import app.morphe.util.getReference
 import com.android.tools.smali.dexlib2.iface.reference.FieldReference
+import hoodles.morphe.patches.duolingo.shared.integrity.disableLoginIntegrityPatch
 
 @Suppress("Unused")
 val enableDebugModePatch = bytecodePatch(
@@ -16,6 +17,8 @@ val enableDebugModePatch = bytecodePatch(
     default = false
 ) {
     compatibleWith(Constants.COMPATIBILITY)
+
+    dependsOn(disableLoginIntegrityPatch)
 
     execute {
         // Obfuscated class and name, but essentially: BuildConfigProvider.isDebug

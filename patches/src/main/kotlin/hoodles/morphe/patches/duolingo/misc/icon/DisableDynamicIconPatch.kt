@@ -4,6 +4,7 @@ import app.morphe.patcher.patch.resourcePatch
 import app.morphe.util.asSequence
 import app.morphe.util.removeFromParent
 import hoodles.morphe.patches.duolingo.shared.Constants
+import hoodles.morphe.patches.duolingo.shared.integrity.disableLoginIntegrityPatch
 import org.w3c.dom.Element
 
 @Suppress("unused")
@@ -13,6 +14,8 @@ val disableDynamicIconPatch = resourcePatch(
     default = false
 ) {
     compatibleWith(Constants.COMPATIBILITY)
+
+    dependsOn(disableLoginIntegrityPatch)
 
     execute {
         document("AndroidManifest.xml").use { document ->

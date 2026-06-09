@@ -15,6 +15,7 @@ import com.android.tools.smali.dexlib2.iface.reference.FieldReference
 import hoodles.morphe.util.constructor
 import hoodles.morphe.util.fieldByName
 import app.morphe.util.indexOfFirstInstructionOrThrow
+import hoodles.morphe.patches.duolingo.shared.integrity.disableLoginIntegrityPatch
 import hoodles.morphe.util.removeFlag
 
 enum class PremiumVariant {
@@ -28,6 +29,8 @@ val enablePremiumPatch = bytecodePatch(
     description = "Enables app features locked behind the subscription paywall."
 ) {
     compatibleWith(Constants.COMPATIBILITY)
+
+    dependsOn(disableLoginIntegrityPatch)
 
     val premiumVariant by stringOption(
         key = "premiumVariant",
