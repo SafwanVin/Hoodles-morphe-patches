@@ -1,4 +1,4 @@
-package hoodles.morphe.patches.duolingo.misc.integrity
+package hoodles.morphe.patches.duolingo.shared.integrity
 
 import app.morphe.patcher.Fingerprint
 import com.android.tools.smali.dexlib2.AccessFlags

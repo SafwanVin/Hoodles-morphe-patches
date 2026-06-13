@@ -1,4 +1,4 @@
-package hoodles.morphe.patches.nomone.misc.tamper
+package hoodles.morphe.patches.nomone.shared.tamper
 
 import app.morphe.patcher.Fingerprint
 import app.morphe.patcher.InstructionLocation

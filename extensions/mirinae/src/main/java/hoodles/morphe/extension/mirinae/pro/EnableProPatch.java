@@ -1,18 +1,12 @@
 package hoodles.morphe.extension.mirinae.pro;
 
+import hoodles.morphe.extension.shared.Utils;
+import hoodles.morphe.extension.shared.requests.Requester;
+
 import android.webkit.WebResourceRequest;
 import android.webkit.WebResourceResponse;
 
-import java.io.BufferedReader;
-import java.io.ByteArrayInputStream;
-import java.io.IOException;
-import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
-import java.net.URL;
-import java.nio.charset.StandardCharsets;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
 import java.util.regex.Pattern;
 
 @SuppressWarnings("unused")
@@ -27,55 +21,21 @@ public class EnableProPatch {
             return null;
         }
 
+        HttpURLConnection connection = null;
         try {
-            HttpURLConnection connection = (HttpURLConnection) new URL(url).openConnection();
-            connection.setRequestMethod("GET");
-
-            for (Map.Entry<String, String> entry : request.getRequestHeaders().entrySet()) {
-                connection.setRequestProperty(entry.getKey(), entry.getValue());
-            }
-
+            connection = Requester.getConnectionFromRequest(request);
             connection.connect();
-            String jsBody = fetch(connection);
 
+            String jsBody = Requester.parseString(connection);
             String modifiedBody = patch(jsBody);
 
-            return new WebResourceResponse(
-                    "application/javascript",
-                    "UTF-8",
-                    connection.getResponseCode(),
-                    connection.getResponseMessage(),
-                    getHeaders(connection),
-                    new ByteArrayInputStream(modifiedBody.getBytes(StandardCharsets.UTF_8))
-            );
+            return Utils.getResponse(connection, modifiedBody);
         } catch (Exception e) {
             return null;
+        } finally {
+            if (connection != null)
+                connection.disconnect();
         }
-    }
-
-    private static String fetch(HttpURLConnection connection) throws IOException {
-        BufferedReader reader = new BufferedReader(
-                new InputStreamReader(connection.getInputStream(), StandardCharsets.UTF_8)
-        );
-        StringBuilder sb = new StringBuilder();
-        String line;
-        while ((line = reader.readLine()) != null) {
-            sb.append(line).append("\n");
-        }
-        reader.close();
-
-        return sb.toString();
-    }
-
-    private static Map<String, String> getHeaders(HttpURLConnection connection) {
-        Map<String, String> headers = new HashMap<>();
-        for (Map.Entry<String, List<String>> entry : connection.getHeaderFields().entrySet()) {
-            if (entry.getKey() != null && entry.getValue() != null && !entry.getValue().isEmpty()) {
-                headers.put(entry.getKey(), entry.getValue().get(0));
-            }
-        }
-
-        return headers;
     }
 
     private static String patch(String jsBody) {

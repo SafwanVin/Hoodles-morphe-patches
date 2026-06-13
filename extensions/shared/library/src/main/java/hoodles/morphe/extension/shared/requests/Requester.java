@@ -1,5 +1,7 @@
 package hoodles.morphe.extension.shared.requests;
 
+import android.webkit.WebResourceRequest;
+
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -10,6 +12,7 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.util.Map;
 
 import app.morphe.extension.shared.Utils;
 
@@ -32,6 +35,17 @@ public class Requester {
                 + "; Morphe/" + Utils.getAppVersionName()
                 + " (" + Utils.getPatchesReleaseVersion() + ")";
         connection.setRequestProperty("User-Agent", agentString);
+
+        return connection;
+    }
+
+    public static HttpURLConnection getConnectionFromRequest(WebResourceRequest request) throws IOException {
+        HttpURLConnection connection = (HttpURLConnection) new URL(request.getUrl().toString()).openConnection();
+        connection.setRequestMethod(request.getMethod());
+
+        for (Map.Entry<String, String> entry : request.getRequestHeaders().entrySet()) {
+            connection.setRequestProperty(entry.getKey(), entry.getValue());
+        }
 
         return connection;
     }
@@ -142,5 +156,4 @@ public class Requester {
         connection.disconnect();
         return array;
     }
-
 }

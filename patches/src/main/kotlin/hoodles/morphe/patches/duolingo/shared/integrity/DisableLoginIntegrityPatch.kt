@@ -1,24 +1,17 @@
-package hoodles.morphe.patches.duolingo.misc.integrity
+package hoodles.morphe.patches.duolingo.shared.integrity
 
 import app.morphe.patcher.extensions.InstructionExtensions.addInstruction
 import app.morphe.patcher.extensions.InstructionExtensions.getInstruction
-import app.morphe.patcher.fieldAccess
 import app.morphe.patcher.patch.bytecodePatch
 import app.morphe.util.getReference
 import app.morphe.util.indexOfFirstInstruction
 import com.android.tools.smali.dexlib2.Opcode
 import com.android.tools.smali.dexlib2.iface.instruction.formats.Instruction21c
 import com.android.tools.smali.dexlib2.iface.instruction.formats.Instruction22c
-import com.android.tools.smali.dexlib2.iface.instruction.formats.Instruction35c
 import com.android.tools.smali.dexlib2.iface.reference.FieldReference
-import hoodles.morphe.patches.duolingo.shared.Constants
 
 @Suppress("unused")
-val disableLoginIntegrityPatch = bytecodePatch(
-    name = "Disable Login Integrity",
-    description = "Removes Play Integrity device attestation from login request."
-) {
-    compatibleWith(Constants.COMPATIBILITY)
+val disableLoginIntegrityPatch = bytecodePatch {
 
     execute {
         val emptySignalRef = BasicLoginFingerprint.method.let {
