@@ -1,3 +1,11 @@
+## [1.36.1-dev.1](https://github.com/hoo-dles/morphe-patches/compare/v1.36.0...v1.36.1-dev.1) (2026-06-22)
+
+
+### Bug Fixes
+
+* **Duolingo:** Update support for v6.83.4 and fix video calls for MAX ([941841f](https://github.com/hoo-dles/morphe-patches/commit/941841fb1d91477b62a9a5a87316dd9b124796d9))
+* **Pandora:** Update icon color ([46c9d1b](https://github.com/hoo-dles/morphe-patches/commit/46c9d1b90f7a90ba71e5b53231cc46136d3695e2))
+
 # [1.36.0](https://github.com/hoo-dles/morphe-patches/compare/v1.35.1...v1.36.0) (2026-06-13)
 
 
