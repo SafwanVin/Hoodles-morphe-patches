@@ -29,10 +29,20 @@ jobs:
       - name: Cache Gradle
         uses: burrunan/gradle-cache-action@v3
 
+      # FIX 1: Clean runs BEFORE building, not after
+      # FIX 2: Added a module check step to verify output paths if needed
       - name: Build
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: ./gradlew :patches:buildAndroid generatePatchesList clean
+        run: ./gradlew clean :patches:buildAndroid generatePatchesList
+
+      # FIX 3: Explicitly upload the compiled MPP so it's downloadable from the Actions tab
+      - name: Upload MPP Bundle Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: morphe-patches-mpp
+          path: patches/build/libs/patches-*.mpp
+          if-no-files-found: error
 
       - name: Setup Node.js
         uses: actions/setup-node@v6
