@@ -1,3 +1,57 @@
+## [1.38.1](https://github.com/hoo-dles/morphe-patches/compare/v1.38.0...v1.38.1) (2026-06-28)
+
+
+### Bug Fixes
+
+* **Duolingo:** Update patches to support v6.85.7 ([de14559](https://github.com/hoo-dles/morphe-patches/commit/de14559633f8294b810d5ad4d625b3fe052e3482))
+
+## [1.38.1-dev.1](https://github.com/hoo-dles/morphe-patches/compare/v1.38.0...v1.38.1-dev.1) (2026-06-28)
+
+
+### Bug Fixes
+
+* **Duolingo:** Update patches to support v6.85.7 ([de14559](https://github.com/hoo-dles/morphe-patches/commit/de14559633f8294b810d5ad4d625b3fe052e3482))
+
+# [1.38.0](https://github.com/hoo-dles/morphe-patches/compare/v1.37.0...v1.38.0) (2026-06-27)
+
+
+### Features
+
+* **Goodreads:** Add `Disable ads` patch ([d9da4fe](https://github.com/hoo-dles/morphe-patches/commit/d9da4feed08dc0cac0b7556ce00287bd865d02ee))
+
+# [1.38.0-dev.1](https://github.com/hoo-dles/morphe-patches/compare/v1.37.0...v1.38.0-dev.1) (2026-06-26)
+
+
+### Features
+
+* **Goodreads:** Add `Disable ads` patch ([d9da4fe](https://github.com/hoo-dles/morphe-patches/commit/d9da4feed08dc0cac0b7556ce00287bd865d02ee))
+
+# [1.37.0](https://github.com/hoo-dles/morphe-patches/compare/v1.36.1...v1.37.0) (2026-06-24)
+
+
+### Bug Fixes
+
+* **Windy:** Update patch to support v50.1.1 ([3abcab8](https://github.com/hoo-dles/morphe-patches/commit/3abcab8377497a58dcdf721e2784a7d41206c45d))
+
+
+### Features
+
+* **Google News:** Add `Enable custom tabs` patch ([55a95ec](https://github.com/hoo-dles/morphe-patches/commit/55a95ecddb909a99151c1ff0bed90b7d28dee000))
+
+# [1.37.0-dev.1](https://github.com/hoo-dles/morphe-patches/compare/v1.36.2-dev.1...v1.37.0-dev.1) (2026-06-24)
+
+
+### Features
+
+* **Google News:** Add `Enable custom tabs` patch ([55a95ec](https://github.com/hoo-dles/morphe-patches/commit/55a95ecddb909a99151c1ff0bed90b7d28dee000))
+
+## [1.36.2-dev.1](https://github.com/hoo-dles/morphe-patches/compare/v1.36.1...v1.36.2-dev.1) (2026-06-23)
+
+
+### Bug Fixes
+
+* **Windy:** Update patch to support v50.1.1 ([3abcab8](https://github.com/hoo-dles/morphe-patches/commit/3abcab8377497a58dcdf721e2784a7d41206c45d))
+
 ## [1.36.1](https://github.com/hoo-dles/morphe-patches/compare/v1.36.0...v1.36.1) (2026-06-23)
 
 
