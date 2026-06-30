@@ -8,6 +8,6 @@ object Constants {
         name = "CamScanner",
         packageName = "com.intsig.camscanner",
         appIconColor = 0X19BCAA,
-        targets = listOf(AppTarget("7.15.5.2604080000"))
+        targets = listOf(AppTarget("7.20.0.2606230000"))
     )
 }
