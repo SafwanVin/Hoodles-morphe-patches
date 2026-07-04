@@ -2016,6 +2016,37 @@
       ],
       "options": []
     },
+        {
+      "name": "Unlock Premium",
+      "description": "Unlock premium features.",
+      "default": true,
+      "dependencies": [],
+      "compatiblePackages": [
+        {
+          "packageName": "com.hopefactory2021.fakegpslocation",
+          "name": "Fake GPS Location",
+          "description": null,
+          "apkFileType": null,
+          "appIconColor": "#5F7C8A",
+          "signatures": null,
+          "targets": [
+            {
+              "version": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            },
+            {
+              "version": "113.0",
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
     {
       "name": "Unlock split tunneling",
       "description": "Enables the split tunneling feature usually locked behind the Proton Plus paywall.",
