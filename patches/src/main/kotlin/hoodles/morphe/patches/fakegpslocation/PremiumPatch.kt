@@ -15,7 +15,7 @@ val premiumPatch = bytecodePatch(
             name = "Fake GPS Location",
             packageName = "com.hopefactory2021.fakegpslocation",
             appIconColor = 0x5f7c8a,
-            targets = listOf(AppTarget(null), AppTarget("113.0"))
+            targets = listOf(AppTarget(null), AppTarget("119.0"))
         )
     )
     execute {
