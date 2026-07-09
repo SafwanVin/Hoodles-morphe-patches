@@ -14,7 +14,7 @@ val disableAdsPatch = bytecodePatch(
         name = "Sofascore",
         packageName = "com.sofascore.results",
         appIconColor = 0x374DF5,
-        targets = listOf(AppTarget("25.12.17"))
+        targets = listOf(AppTarget("26.06.29"))
     ))
 
     execute {
