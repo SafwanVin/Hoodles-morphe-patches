@@ -1,11 +1,8 @@
 name: Release
 
+# CHANGED: It will now ONLY run when you manually click the button on GitHub
 on:
   workflow_dispatch:
-  push:
-    branches:
-      - main
-      - dev
 
 jobs:
   release:
@@ -35,18 +32,25 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: ./gradlew clean :patches:buildAndroid generatePatchesList
 
-      # Automatically creates a public GitHub Release and uploads the .mpp file
-      # Change the tag and name lines below whenever you want to bump the version number!
+      # AUTOMATIC VERSION DETECTION: Reads the version out of your project properties
+      - name: Extract Version
+        id: get_version
+        run: |
+          VERSION=$(grep '^version=' gradle.properties | cut -d= -f2 | xargs)
+          echo "VERSION=v$VERSION" >> $GITHUB_OUTPUT
+
+      # Automatically creates a clean public GitHub Release with your auto-detected version
       - name: Create GitHub Release
         uses: ncipollo/release-action@v1
         with:
-          artifacts: "**/build/libs/patches-*.mpp,patches-bundle.json,patches-list.json"
-          tag: "v1.8.2"
-          name: "Release v1.8.2"
+          artifacts: "**/build/libs/patches-*[0-9].mpp"
+          tag: ${{ steps.get_version.outputs.VERSION }}
+          name: "Release ${{ steps.get_version.outputs.VERSION }}"
           body: "Automated build of Morphe Patches Bundle."
           allowUpdates: true
           token: ${{ secrets.GITHUB_TOKEN }}
 
+      # Purges jsDelivr CDN cache for project sync
       - name: Purge jsDelivr Cache
         run: |
           for file in patches-bundle.json patches-list.json; do
