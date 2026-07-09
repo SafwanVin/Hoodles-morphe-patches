@@ -29,49 +29,23 @@ jobs:
       - name: Cache Gradle
         uses: burrunan/gradle-cache-action@v3
 
-      # FIX 1: Clean runs BEFORE building, not after
-      # FIX 2: Added a module check step to verify output paths if needed
+      # Cleans old builds first, then generates the bundle
       - name: Build
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: ./gradlew clean :patches:buildAndroid generatePatchesList
 
-      # FIX 3: Explicitly upload the compiled MPP so it's downloadable from the Actions tab
-      - name: Upload MPP Bundle Artifact
-        uses: actions/upload-artifact@v4
+      # Automatically creates a public GitHub Release and uploads the .mpp file
+      # Change the tag and name lines below whenever you want to bump the version number!
+      - name: Create GitHub Release
+        uses: ncipollo/release-action@v1
         with:
-          name: morphe-patches-mpp
-          path: patches/build/libs/patches-*.mpp
-          if-no-files-found: error
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v6
-        with:
-          node-version: 'lts/*'
-          cache: 'npm'
-
-      - name: Install dependencies
-        run: npm install
-
-      - name: Import GPG key
-        uses: crazy-max/ghaction-import-gpg@v7
-        with:
-          gpg_private_key: ${{ secrets.GPG_PRIVATE_KEY }}
-          passphrase: ${{ secrets.GPG_PASSPHRASE }}
-          fingerprint: ${{ vars.GPG_FINGERPRINT }}
-
-      - name: Release
-        uses: cycjimmy/semantic-release-action@v6
-        id: release
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Attest
-        if: steps.release.outputs.new_release_published == 'true'
-        uses: actions/attest-build-provenance@v4
-        with:
-          subject-name: 'Patches ${{ steps.release.outputs.new_release_git_tag }}'
-          subject-path: patches/build/libs/patches-*.mpp
+          artifacts: "**/build/libs/patches-*.mpp,patches-bundle.json,patches-list.json"
+          tag: "v1.8.2"
+          name: "Release v1.8.2"
+          body: "Automated build of Morphe Patches Bundle."
+          allowUpdates: true
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Purge jsDelivr Cache
         run: |
